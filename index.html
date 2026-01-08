@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <title>Test Website</title>
     <style>
         .container {
@@ -16,7 +15,7 @@
 <body style="
     color: white;
     background: linear-gradient(315deg, #6200ff, orange);
-    background-attachment: fixed; <!-- This makes it so the gradient can be at any angle without banding -->
+    background-attachment: fixed; &lt;!-- This makes it so the gradient can be at any angle without banding --&gt;
 ">
     <div class="container">
         <h1>This website is in the making.</h1>
@@ -27,6 +26,19 @@
         <p>Testing 1 2 3... Testing 1 2 3...</p>
         <p>Update: The gradient works! Thank you dev tools!</p>
     </div>
-
+    <div class="container" style="
+    text-align: center;
+">
+        <a href="https://youtu.be/dQw4w9WgXcQ" style="
+        color: orange;
+        ">Test Link</a>
+    </div>
+    <div class="container" style="text-align: center;">
+        <button onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" style="
+    color: orange;
+    background-color: rgba(0, 0, 0, .1);
+    outline: 2px solid orange;
+">Test Button</button>
+    </div>
 </body>
 </html>
