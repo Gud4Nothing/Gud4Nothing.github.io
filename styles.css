@@ -7,10 +7,17 @@
   border-radius: 10px;
   }
 
-.body {
+.body_main {
   color: white;
   background: linear-gradient(315deg, #6200ff, orange);
   background-attachment: fixed; /** This makes it so there's no banding **/
+  margin: 0px;
+}
+
+.body_ideas {
+  color: white;
+  background: linear-gradient(315deg, cyan, #b713ff);
+  background-attachment: fixed;
   margin: 0px;
 }
 
@@ -18,6 +25,13 @@
   color: orange;
   background-color: rgba(0, 0, 0, .1);
   outline: 2px solid orange;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 0.02px;
 }
 
 .useless_input_field {
