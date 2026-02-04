@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin - Gud4Nothing</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .admin_container {
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    .idea_item {
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 2px solid orange;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .idea_name {
+      font-weight: bold;
+      color: orange;
+      font-size: 1.2rem;
+    }
+
+    .idea_text {
+      color: white;
+      margin: 10px 0;
+    }
+
+    .approve_button {
+      border: 2px solid orange;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 100px;
+      height: 32px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .approve_button:hover {
+      background-color: rgba(255, 165, 0, 0.3);
+    }
+
+    .delete_button {
+      border: 2px solid red;
+      color: white;
+      background-color: rgba(255, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 100px;
+      height: 32px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .delete_button:hover {
+      background-color: rgba(255, 0, 0, 0.3);
+    }
+
+    .button_group {
+      display: flex;
+      gap: 10px;
+    }
+
+    #no_ideas {
+      color: orange;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body class="body_HTWYT">
+  <nav class="navbar">
+    <div class="nav_container">
+      <a href="https://Gud4Nothing.github.io" class="nav_logo">Gud4Nothing</a>
+      <ul class="nav_menu">
+        <li><a href="https://Gud4Nothing.github.io">Home</a></li>
+        <li><a href="ideas">Ideas</a></li>
+        <li><a href="HTWYT">How to Waste Your Time</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="admin_container">
+    <h1>Admin Dashboard - Approve Ideas</h1>
+    <p>Review pending ideas below. Click "Approve" to post them to the main page, or "Delete" to reject them.</p>
+  </div>
+
+  <div id="ideas_list"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
