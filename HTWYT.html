@@ -20,28 +20,22 @@
     <p>This is where YOUR ideas (from the ideas page) are posted!</p>
   </div>
   <div name="ideas">
-    <!-- Approved ideas will be dynamically loaded here -->
+    <div class="container">
+      <h1>Mommy</h1>
+      <p>Making a list of things for wasting your time.</p>
+    </div>
+    <div class="container">
+      <h1>Nehemiah / Anonymous</h1>
+      <p>Watch paint dry.</p>
+    </div>
+    <div class="container">
+      <h1>Anonymous</h1>
+      <p>Twiddle your thumbs.</p>
+    </div>
+    <div class="container">
+      <h1>Nehemiah</h1>
+      <p>Watch Napoleon Dynamite.</p>
+    </div>
   </div>
-  <script>
-    // Load approved ideas
-    fetch('approved_ideas.json')
-      .then(res => res.json())
-      .then(ideas => {
-        const container = document.querySelector('[name="ideas"]');
-        ideas.forEach(idea => {
-          const div = document.createElement('div');
-          div.className = 'container';
-          div.innerHTML = `
-            <h1>${escapeHtml(idea.name)}</h1>
-            <p>${escapeHtml(idea.idea)}</p>
-          `;
-          container.appendChild(div);
-        });
-      })
-      .catch(err => {
-        console.error('Error loading approved ideas:', err);
-      });
-  </script>
-  <script src="admin.js"></script>
 </body>
 </html>
