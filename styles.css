@@ -23,7 +23,7 @@
 
 .body_HTWYT {
   color: white;
-  background: linear-gradient(315deg, orange, pink);
+  background: linear-gradient(315deg, orange, #ff1a98);
   background-attachment: fixed;
   margin: 0px;
 }
